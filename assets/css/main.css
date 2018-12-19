@@ -3116,8 +3116,8 @@ input, select, textarea {
 my custom
 */
 #glogo {
-	width: 300px;
-        height: 300px;
+	width: 100%;
+        height: auto;
         background-image: url("../../resources/logo.png");
         background-size: cover;
         background-repeat: no-repeat;
