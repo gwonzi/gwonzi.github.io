@@ -3111,18 +3111,3 @@ input, select, textarea {
 					}
 
 	}
-
-/*
-my custom
-*/
-#glogo {
-	width: 100%;
-        height: auto;
-        background-image: url("../../resources/logo.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-	/* position: relative; */
-	background-position: center;
-	/*padding: 7.5em 0 2em 0;*/
-	cursor: default;
-}
