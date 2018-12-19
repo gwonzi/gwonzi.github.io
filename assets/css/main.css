@@ -2184,6 +2184,7 @@ input, select, textarea {
 			margin: 0;
 			display: inline-block;
 			vertical-align: middle;
+			width: 95%
 		}
 
 		#header header {
