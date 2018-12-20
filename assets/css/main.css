@@ -2124,8 +2124,12 @@ input, select, textarea {
 			-webkit-font-smoothing: antialiased;
 			-moz-osx-font-smoothing: grayscale;
 		}
+		
+		.micon:before {
+			display: inline-block;
+		}
 
-		.icon > .label {
+		.icon > .label, .micon > .label {
 			display: none;
 		}
 
