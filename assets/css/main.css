@@ -2115,7 +2115,7 @@ input, select, textarea {
 
 		.icon:before {
 			display: inline-block;
-			font-family: "Font Awesome 5 Brands";
+			/*font-family: "Font Awesome 5 Brands";*/
 			font-size: 1.25em;
 			text-decoration: none;
 			font-style: normal;
@@ -2124,10 +2124,6 @@ input, select, textarea {
 			-webkit-font-smoothing: antialiased;
 			-moz-osx-font-smoothing: grayscale;
 		}
-		
-			.icon.fas:before {
-				font-family: "Font Awesome 5 Free";
-			}
 
 		.icon > .label {
 			display: none;
