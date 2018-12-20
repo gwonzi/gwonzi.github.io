@@ -2125,8 +2125,8 @@ input, select, textarea {
 			-moz-osx-font-smoothing: grayscale;
 		}
 		
-			.icon:before.fas {
-				font-family: "Font Awesome 5 Free" !important;
+			.icon.fas:before {
+				font-family: "Font Awesome 5 Free";
 			}
 
 		.icon > .label {
