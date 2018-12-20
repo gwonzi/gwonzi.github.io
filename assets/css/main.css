@@ -2124,6 +2124,10 @@ input, select, textarea {
 			-webkit-font-smoothing: antialiased;
 			-moz-osx-font-smoothing: grayscale;
 		}
+		
+			.icon:before.fas {
+				font-family: "Font Awesome 5 Free" !important;
+			}
 
 		.icon > .label {
 			display: none;
