@@ -2884,7 +2884,7 @@ input, select, textarea {
 				}
 
 					#navButton .toggle:before {
-						font-family: "Font Awesome 5 Brands";
+						/*font-family: "Font Awesome 5 Brands";*/
 						text-decoration: none;
 						font-style: normal;
 						font-weight: normal;
