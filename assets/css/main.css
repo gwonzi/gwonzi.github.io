@@ -2898,7 +2898,7 @@ input, select, textarea {
 						font-weight: normal;
 						-webkit-font-smoothing: antialiased;
 						-moz-osx-font-smoothing: grayscale;
-						content: '\f0c9';
+						content: ''; /* \f0c9 */
 						color: #fff;
 						color: rgba(255, 255, 255, 0.75);
 						text-align: center;
