@@ -2879,6 +2879,7 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
+				text-align: center;
 			}
 
 				#navButton .toggle {
