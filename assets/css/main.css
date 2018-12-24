@@ -2882,11 +2882,6 @@ input, select, textarea {
 				text-align: center;
 			}
 
-			.navbut {
-				color: #fff;
-				display: none;
-			}
-
 				#navButton .toggle {
 					position: absolute;
 					left: 0;
