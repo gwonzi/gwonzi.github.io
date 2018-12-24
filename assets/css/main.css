@@ -2331,7 +2331,7 @@ input, select, textarea {
 				transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 			}
 
-				#nav > ul > li.active {
+				#nav > ul > li.active, #nav > ul > li > a:hover {
 					border-color: rgba(192, 192, 192, 0.35);
 				}
 
