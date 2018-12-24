@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/assets/css/main.css" /> <!-- includes font awesome import -->
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+		<script src="/assets/js/jquery.min.js"></script>
 
 	<!-- favicon package -->
 		<link rel="apple-touch-icon" sizes="180x180" href="/resources/apple-touch-icon.png">
@@ -44,7 +45,7 @@
 					<!-- /inner -->
 					<!-- nav -->
 						<nav id="nav">
-							<!-- /assets/js/dom/nav.html -->
+							<script>$(function(){$("#nav").load("/assets/js/dom/nav.html");});</script>
 						</nav>
 					<!-- /nav -->
 				</div>
@@ -97,8 +98,6 @@
 			<!-- /footer -->
 		</div>
 		<!-- scripts -->
-			<script src="/assets/js/jquery.min.js"></script>
-			<script>$(function(){var nav="/assets/js/dom/nav.html";var footer="/assets/js/dom/footer.html";$("#nav").load(nav);$("#footer").load(footer);});</script>
 			<script src="/assets/js/jquery.dropotron.min.js"></script>
 			<script src="/assets/js/jquery.scrolly.min.js"></script>
 			<script src="/assets/js/jquery.scrollex.min.js"></script>
