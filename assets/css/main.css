@@ -2884,6 +2884,7 @@ input, select, textarea {
 
 			.navbut {
 				color: #fff;
+				display: none;
 			}
 
 				#navButton .toggle {
