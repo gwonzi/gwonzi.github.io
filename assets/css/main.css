@@ -159,7 +159,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #ef8376;
+			color: #378498;
 			border-bottom-color: transparent;
 		}
 
@@ -1973,7 +1973,7 @@ input, select, textarea {
 		form select:focus,
 		form textarea:focus {
 			background: #fff;
-			border-color: #df7366;
+			border-color: #2e788b;
 		}
 
 	form input[type="text"],
@@ -2170,7 +2170,7 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background-image: url("../../assets/img/header.png");
+		background-image: url("/assets/img/header.png");
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
@@ -2381,7 +2381,7 @@ input, select, textarea {
 			}
 
 			.dropotron li:hover {
-				color: #ef8376;
+				color: #378498;
 			}
 
 			.dropotron li a, .dropotron li span {
@@ -2554,7 +2554,7 @@ input, select, textarea {
 			}
 
 			.carousel .forward:hover:before, .carousel .backward:hover:before {
-				background-color: rgba(239, 131, 118, 0.75);
+				background-color: rgba(55, 132, 152, 0.75);
 			}
 
 		.carousel .forward {
