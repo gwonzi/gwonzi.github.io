@@ -2335,7 +2335,6 @@ input, select, textarea {
 					border-color: rgba(192, 192, 192, 0.35);
 				}
 
-/*
 				#nav > ul > li:hover {
 					border: solid 1px transparent;
 					border-color: rgba(192, 192, 192, 0.35);
@@ -2345,7 +2344,6 @@ input, select, textarea {
 					-ms-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 					transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 				}
-*/
 
 				#nav > ul > li > a, #nav > ul > li > span {
 					display: block;
