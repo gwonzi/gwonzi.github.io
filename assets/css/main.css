@@ -2337,7 +2337,12 @@ input, select, textarea {
 
 				#nav > ul > li > a:hover {
 					border-color: rgba(192, 192, 192, 0.35);
-					border: 1;
+					border: solid 1px;
+					border-radius: 0.5em;
+					-moz-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+					-webkit-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+					-ms-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+					transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 				}
 
 				#nav > ul > li > a, #nav > ul > li > span {
