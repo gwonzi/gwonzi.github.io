@@ -3136,7 +3136,8 @@ input, select, textarea {
 	.popout {
 		position: relative;
 		display: inline-block;
-		text-decoration: underline #2b252c dashed;
+		border-bottom: 1px dotted #2b252c;
+		padding-bottom: -1px;
 	}
 
 	.popout .cardimg {
@@ -3159,5 +3160,5 @@ input, select, textarea {
 	}
 
 	.popout:hover {
-		text-decoration: none;
+		border: 0;
 	}
