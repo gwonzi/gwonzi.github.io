@@ -3144,6 +3144,7 @@ input, select, textarea {
 
 	.popout .cardimg {
 		visibility: hidden;
+		opacity: 0;
 		width: 230px;
 		background: transparent;
 		color: #000;
@@ -3151,10 +3152,10 @@ input, select, textarea {
 		position: absolute;
 		z-index: 1;
 		left: 100%;
-		bottom: 50px;
-		transition: visibility 0.35s ease-in-out;
-		-moz-transition: visibility 0.35s ease-in-out;
-		-webkit-transition: visibility 0.35s ease-in-out;
+		top: 50px;
+		transition: opacity 0.35s ease-in-out;
+		-moz-transition: opacity 0.35s ease-in-out;
+		-webkit-transition: opacity 0.35s ease-in-out;
 	}
 
 	.popout .cardimg img {
@@ -3163,4 +3164,5 @@ input, select, textarea {
 
 	.popout:hover .cardimg {
 		visibility: visible;
+		opacity: 1;
 	}
