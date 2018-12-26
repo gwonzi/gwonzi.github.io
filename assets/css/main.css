@@ -3138,6 +3138,10 @@ input, select, textarea {
 		display: inline-block;
 	}
 
+	.popout:hover {
+		cursor: help;
+	}
+
 	.popout .cardimg {
 		visibility: hidden;
 		width: 230px;
@@ -3147,7 +3151,10 @@ input, select, textarea {
 		position: absolute;
 		z-index: 1;
 		left: 100%;
-		bottom: 15%;
+		bottom: 50px;
+		transition: visibility 0.35s ease-in-out;
+		-moz-transition: visibility 0.35s ease-in-out;
+		-webkit-transition: visibility 0.35s ease-in-out;
 	}
 
 	.popout .cardimg img {
