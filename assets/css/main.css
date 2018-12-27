@@ -3131,38 +3131,47 @@ input, select, textarea {
 
 	}
 
-	/* Tooltip */
+/* Tooltip */
 
-	.popout {
-		position: relative;
-		display: inline-block;
-	}
+.popout {
+	position: relative;
+	display: inline-block;
+}
 
-	.popout:hover {
-		cursor: help;
-	}
+.popout:hover {
+	cursor: help;
+}
 
-	.popout .cardimg {
-		visibility: hidden;
-		opacity: 0;
-		width: 230px;
-		background: transparent;
-		color: #000;
-		padding: 5px;
-		position: absolute;
-		z-index: 1;
-		top: 100%;
-		left: -115px;
-		transition: opacity 0.35s ease-in-out;
-		-moz-transition: opacity 0.35s ease-in-out;
-		-webkit-transition: opacity 0.35s ease-in-out;
-	}
+.popout .cardimg {
+	visibility: hidden;
+	opacity: 0;
+	width: 230px;
+	background: transparent;
+	color: #000;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	top: 100%;
+	left: -115px;
+	transition: opacity 0.35s ease-in-out;
+	-moz-transition: opacity 0.35s ease-in-out;
+	-webkit-transition: opacity 0.35s ease-in-out;
+}
 
-	.popout .cardimg img {
-		width: 100%;
-	}
+.popout .cardimg img {
+	width: 100%;
+}
 
-	.popout:hover .cardimg {
-		visibility: visible;
-		opacity: 1;
-	}
+.popout:hover .cardimg {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* Icon divs */
+.colimg {
+	width: 30%;
+}
+
+.coltxt {
+	width: 70%;
+}
