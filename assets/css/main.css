@@ -3170,7 +3170,10 @@ input, select, textarea {
 /* Icon divs */
 .colimg {
 	width: 30%;
+	height: 100%;
 	display: inline;
+	padding-right: 5%;
+	font-size: 200%;
 }
 
 .coltxt {
