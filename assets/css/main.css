@@ -3151,8 +3151,7 @@ input, select, textarea {
 		padding: 5px;
 		position: absolute;
 		z-index: 1;
-		left: 100%;
-		top: -30px;
+		top: 100%;
 		transition: opacity 0.35s ease-in-out;
 		-moz-transition: opacity 0.35s ease-in-out;
 		-webkit-transition: opacity 0.35s ease-in-out;
