@@ -3169,8 +3169,11 @@ input, select, textarea {
 
 /* Icon divs */
 .colimg {
-	width: 30%;
+	width: 20%;
 	/*display: inline;*/
+}
+
+.colimg i {
 	font-size: 200%;
 }
 
