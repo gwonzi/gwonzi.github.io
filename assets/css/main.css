@@ -3201,7 +3201,7 @@ input, select, textarea {
 }
 
 .rtab th {
-	text-weight: bold;
+	font-weight: bold;
 }
 
 .rtab th, .rtab td {
