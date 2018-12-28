@@ -3191,13 +3191,11 @@ input, select, textarea {
 }
 
 /* Standings table */
-#rtable, #ptable {
-	text-align: center;
-}
-
-.rtab {
+table.rtab {
 	border-collapse: collapse;
 	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 .rtab, .rtab th, .rtab td {
