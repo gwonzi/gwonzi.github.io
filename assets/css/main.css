@@ -3189,3 +3189,12 @@ input, select, textarea {
 .row div table {
 	height: 100%;
 }
+
+/* Standings table */
+.stattable {
+	border-collapse: collapse;
+}
+
+.stattable, .stattable th, .stattable td {
+	border: 1px solid #bbb;
+}
