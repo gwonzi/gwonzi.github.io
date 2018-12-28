@@ -1,6 +1,6 @@
 $("#s1").click(function() {
   var tablehtml = "\
-  <table class=\"stattable\"> \
+  <table class=\"rtab\"> \
     <tr> \
       <th>Game</th> \
       <th>1st</th> \
