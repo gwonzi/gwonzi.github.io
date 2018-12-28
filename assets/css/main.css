@@ -3190,7 +3190,15 @@ input, select, textarea {
 	height: 100%;
 }
 
-/* Standings table */
+/* Standings */
+ul.sbuttons {
+	list-style-type: none;
+}
+
+.sbuttons li {
+	display: inline;
+}
+
 table.rtab {
 	border-collapse: collapse;
 	width: 90%;
