@@ -3185,9 +3185,3 @@ input, select, textarea {
 	text-align: justify;
 	vertical-align: middle;
 }
-
-#bpoints div div table {
-	position: relative;
-	left: 50%;
-	top: 50%;
-}
