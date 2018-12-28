@@ -3193,6 +3193,7 @@ input, select, textarea {
 /* Standings table */
 .rtab {
 	border-collapse: collapse;
+	width: 90%;
 }
 
 .rtab, .rtab th, .rtab td {
@@ -3202,8 +3203,4 @@ input, select, textarea {
 
 .rtab th {
 	font-weight: bold;
-}
-
-.rtab th, .rtab td {
-	width: 15%;
 }
