@@ -1,3 +1,5 @@
+$.getScript("/assets/js/dom/stats.js")
+
 $("#s1").click(function() {
   var tablehtml = "\
   <table class=\"rtab\"> \
@@ -10,7 +12,7 @@ $("#s1").click(function() {
     </tr> \
     <tr> \
       <th>1</th> \
-      <td>Chris</td> \
+      <td>" + s1g1_rank_1st + "</td> \
       <td>Ryan</td> \
       <td>Eduardo</td> \
       <td>Corey</td> \
