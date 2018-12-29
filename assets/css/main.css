@@ -3204,9 +3204,6 @@ table.rtab, table.ptab {
 	width: 90%;
 	margin-left: 5%;
 	margin-right: 5%;
-}
-
-table.ptab {
 	table-layout: fixed;
 }
 
@@ -3219,17 +3216,12 @@ table.ptab {
 	font-weight: bold;
 }
 
-.rtab th, .rtab td {
+.rtab th, .rtab td, .ptab th, .ptab td {
 	width: 20%;
 }
 
-.ptab th, .ptab td {
-	width: 17.5%;
-}
-
 .rp-small {
-	width: 7.5%;
-	font-size: 50%;
+	font-size: 80%;
 }
 
 .emptycell {
