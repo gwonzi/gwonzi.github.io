@@ -12,7 +12,7 @@ $("#s1").click(function() {
     </tr> \
     <tr> \
       <th>1</th> \
-      <td>" + s1g1_globals.first.name_deck_link + "</td> \
+      <td>" + s1g1_chris.name_deck_link + "</td> \
       <td>Ryan</td> \
       <td>Eduardo</td> \
       <td>Corey</td> \
