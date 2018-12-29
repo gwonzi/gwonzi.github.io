@@ -23,26 +23,24 @@ var chris = {
       return linkify(this.name, this.deck_url, this.deck_name);
     },
     bp: {
-      blood: true,
-      counter: false,
-      removal: true,
-      sweeper: false,
-      generalist: true,
-      flex: false,
-      generosity: false,
-      commanded: false,
-      overrun: false,
-      wrath: false,
-      greed: false,
-      nonbo: false,
-      hero: false
+      blood: 1,
+      counter: 0,
+      removal: 1,
+      sweeper: 0,
+      generalist: 1,
+      flex: 0,
+      generosity: 0,
+      commanded: 0,
+      overrun: 0,
+      wrath: 0,
+      greed: 0,
+      nonbo: 0,
+      hero: 0
     },
     bp_total: function() {
       var i;
       for (var key in this.bp) {
-        if (this.bp.key) {
-          i++;
-        }
+        i += this.bp[key];
       }
       return i;
     }
