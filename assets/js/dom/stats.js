@@ -20,7 +20,7 @@ var s1g1_chris = {
 var s1g1_globals = {
   video_url: "https://www.youtube.com/watch?v=1CqYDICrI_0",
   first: s1g1_chris,
-  second: s1g1_ryan,
-  third: s1g1_eduardo,
-  fourth: s1g1_corey
+  //second: s1g1_ryan,
+  //third: s1g1_eduardo,
+  //fourth: s1g1_corey
 };
