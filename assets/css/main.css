@@ -3227,14 +3227,9 @@ table.ptab {
 	width: 17.5%;
 }
 
-/*
-.th-rp {
-	width: 30%;
-}
-*/
-
 .rp-small {
 	width: 7.5%;
+	font-size: 50%;
 }
 
 .emptycell {
