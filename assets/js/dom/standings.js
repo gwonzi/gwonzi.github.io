@@ -23,17 +23,17 @@ $("#s1").click(function() {
   <table class="ptab"> \
     <tr> \
       <th>Player</th> \
-      <th colspan="4" class="th-rp">Rank Points</th> \
+      <th colspan="4">Rank Points</th> \
       <th>Bonus Points</th> \
       <th>Total</th> \
       <th>Season Rank</th> \
     </tr> \
     <tr> \
       <td class="emptycell"></td> \
-      <td class="td-rp">1st</td> \
-      <td class="td-rp">2nd</td> \
-      <td class="td-rp">3rd</td> \
-      <td class="td-rp">4th</td> \
+      <th class="rp-small">1st</th> \
+      <th class="rp-small">2nd</th> \
+      <th class="rp-small">3rd</th> \
+      <th class="rp-small">4th</th> \
       <td class="emptycell"></td> \
       <td class="emptycell"></td> \
       <td class="emptycell"></td> \
