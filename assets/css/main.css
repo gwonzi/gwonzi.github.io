@@ -3206,6 +3206,10 @@ table.rtab, table.ptab {
 	margin-right: 5%;
 }
 
+table.ptab {
+	table-layout: fixed;
+}
+
 .rtab, .rtab th, .rtab td, .ptab, .ptab th, .ptab td {
 	border: 1px solid #bbb;
 	text-align: center;
@@ -3224,11 +3228,11 @@ table.rtab, table.ptab {
 }
 
 .th-rp {
-	width: 30% !important;
+	width: 30%;
 }
 
 .td-rp {
-	width: 7.5% !important;
+	width: 7.5%;
 }
 
 .emptycell {
