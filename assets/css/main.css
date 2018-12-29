@@ -3223,12 +3223,12 @@ table.rtab, table.ptab {
 	width: 17.5%;
 }
 
-.ptab th.th-rp {
-	width: 30%;
+.th-rp {
+	width: 30% !important;
 }
 
-.ptab td.td-rp {
-	width: 7.5%;
+.td-rp {
+	width: 7.5% !important;
 }
 
 .emptycell {
