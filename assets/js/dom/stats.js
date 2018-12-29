@@ -38,7 +38,7 @@ var chris = {
       hero: 0
     },
     bp_total: function() {
-      var i;
+      var i = 0;
       for (var key in this.bp) {
         i += this.bp[key];
       }
