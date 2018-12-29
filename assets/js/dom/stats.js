@@ -14,7 +14,9 @@ var s1g1_chris = {
   deck_name: "Breya",
   deck_ver: "1.0",
   deck_url: "https://www.mtggoldfish.com/deck/1483882",
-  name_deck_link: this.name + " (<a href=\"" + this.deck_url + "\">" + this.deck_name + "</a>)"
+  name_deck_link: function() {
+    return this.name + " (<a href=\"" + this.deck_url + "\">" + this.deck_name + "</a>)";
+  }
 };
 
 var s1g1_globals = {
