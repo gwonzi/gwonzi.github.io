@@ -1,8 +1,8 @@
 $.getScript("/assets/js/dom/stats.js")
 
 $("#s1").click(function() {
-  var tablehtml = "\
-  <table class=\"rtab\"> \
+  var rtable = '\
+  <table class="rtab"> \
     <tr> \
       <th>Game</th> \
       <th>1st</th> \
@@ -12,11 +12,44 @@ $("#s1").click(function() {
     </tr> \
     <tr> \
       <th>1</th> \
-      <td>" + s1g1_globals.first.name_deck_link() + "</td> \
+      <td>' + s1g1_globals.first.name_deck_link() + '</td> \
       <td>Ryan</td> \
       <td>Eduardo</td> \
       <td>Corey</td> \
     </tr> \
-  </table>";
-  $("#rtable").html(tablehtml);
+  </table>';
+
+  var ptable = '\
+  <table class="ptab"> \
+    <tr> \
+      <th>Player</th> \
+      <th colspan="4" class="th-rp">Rank Points</th> \
+      <th>Bonus Points</th> \
+      <th>Total</th> \
+      <th>Season Rank</th> \
+    </tr> \
+    <tr> \
+      <td></td> \
+      <td>1st</td> \
+      <td>2nd</td> \
+      <td>3rd</td> \
+      <td>4th</td> \
+      <td></td> \
+      <td></td> \
+      <td></td> \
+    </tr> \
+    <tr> \
+      <th>Chris</th> \
+      <td>1</td> \
+      <td>0</td> \
+      <td>0</td> \
+      <td>0</td> \
+      <td>3</td> \
+      <td>7</td> \
+      <td>1st</td> \
+    </tr> \
+  </table>';
+
+  $("#rtable").html(rtable);
+  $("#ptable").html(ptable);
 });

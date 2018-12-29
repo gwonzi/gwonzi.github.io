@@ -3199,19 +3199,19 @@ ul.sbuttons {
 	display: inline;
 }
 
-table.rtab {
+table.rtab, table.ptab {
 	border-collapse: collapse;
 	width: 90%;
 	margin-left: 5%;
 	margin-right: 5%;
 }
 
-.rtab, .rtab th, .rtab td {
+.rtab, .rtab th, .rtab td, .ptab, .ptab th, .ptab td {
 	border: 1px solid #bbb;
 	text-align: center;
 }
 
-.rtab th {
+.rtab th, .ptab th {
 	font-weight: bold;
 }
 
