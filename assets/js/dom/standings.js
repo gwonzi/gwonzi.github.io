@@ -29,14 +29,14 @@ $("#s1").click(function() {
       <th>Season Rank</th> \
     </tr> \
     <tr> \
-      <td></td> \
-      <td>1st</td> \
-      <td>2nd</td> \
-      <td>3rd</td> \
-      <td>4th</td> \
-      <td></td> \
-      <td></td> \
-      <td></td> \
+      <td class="emptycell"></td> \
+      <td class="td-rp">1st</td> \
+      <td class="td-rp">2nd</td> \
+      <td class="td-rp">3rd</td> \
+      <td class="td-rp">4th</td> \
+      <td class="emptycell"></td> \
+      <td class="emptycell"></td> \
+      <td class="emptycell"></td> \
     </tr> \
     <tr> \
       <th>Chris</th> \

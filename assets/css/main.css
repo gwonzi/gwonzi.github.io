@@ -3218,3 +3218,19 @@ table.rtab, table.ptab {
 .rtab th, .rtab td {
 	width: 20%;
 }
+
+.ptab th, .ptab td {
+	width: 17.5%;
+}
+
+.ptab th.th-rp {
+	width: 30%;
+}
+
+.ptab td.td-rp {
+	width: 7.5%;
+}
+
+.emptycell {
+	background: #bbb;
+}
