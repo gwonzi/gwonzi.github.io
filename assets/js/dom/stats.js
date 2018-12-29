@@ -7,10 +7,10 @@ const EDUARDO = "Eduardo";
 const RYAN = "Ryan";
 
 function linkify(url, txt) {
-  return '<a href="' + url + '">' + txt + '</a>';
+  return '<a href="' + url + '" target="_blank">' + txt + '</a>';
 }
 
-function nlink(txt, lnk) {
+function dlink(txt, lnk) {
   return txt + " (" + lnk + ")";
 }
 
@@ -23,8 +23,7 @@ var s1g1_chris = {
   deck_ver: "1.0",
   deck_url: "https://www.mtggoldfish.com/deck/1483882",
   name_deck_link: function() {
-    var deck_link = linkify(this.deck_url, this.deck_name);
-    return nlink(this.name, deck_link);
+    return dlink(this.name, linkify(this.deck_url, this.deck_name));
   }
 };
 
