@@ -238,7 +238,7 @@ function get_rank(rank, players) {
 
 var s1g1_g = {
   video_url: "https://www.youtube.com/watch?v=1CqYDICrI_0",
-  players: [chris.s1g1, corey.s1g1, eduardo.s1g1, ryan.s1g1]
+  players: [chris.s1g1, corey.s1g1, eduardo.s1g1, ryan.s1g1],
   first: function() {
     return get_rank(1, this.players);
   },
