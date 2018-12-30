@@ -1,8 +1,7 @@
 $.getScript("/assets/js/dom/stats.js")
 
-$("#s1").click(function() {
-  var game = s1g1_g;
-  var rtable = '\
+function make_rtable_for_season(season) {
+  start = '\
   <table class="rtab"> \
     <tr> \
       <th>Game</th> \
@@ -10,17 +9,24 @@ $("#s1").click(function() {
       <th>2nd</th> \
       <th>3rd</th> \
       <th>4th</th> \
-    </tr> \
+    </tr>';
+  end = '</table>';
+  return start + make_rtable_row(s1g1_g, "S1G1") + end;
+}
+
+function make_rtable_row(game, name) {
+  return '\
     <tr> \
-      <th><a href="' + game.video_url + '" target="_blank">S1G1</a></th> \
+      <th><a href="'+game.video_url+'" target="_blank">'+name+'</a></th> \
       <td>' + game.first() + '</td> \
       <td>' + game.second() + '</td> \
       <td>' + game.third() + '</td> \
       <td>' + game.fourth() + '</td> \
-    </tr> \
-  </table>';
+    </tr>';
+}
 
-  var ptable = '\
+function make_ptable_for_season(season) {
+  return '\
   <table class="ptab"> \
     <tr> \
       <th>Player</th> \
@@ -80,7 +86,14 @@ $("#s1").click(function() {
       <td>0th</td> \
     </tr> \
   </table>';
+}
+
+$("#s1").click(function() {
+  var game = s1g1_g;
+  var rtable = make_rtable_for_season(1);
+  var ptable = make_ptable_for_season(1);
 
   $("#rtable").html(rtable);
   $("#ptable").html(ptable);
+  $("#stitle").html("Season 1 Standings");
 });
