@@ -3220,6 +3220,7 @@ table.rtab, table.ptab {
 	width: 20%;
   padding-top: 1%;
   padding-bottom: 1%;
+  vertical-align: middle;
 }
 
 .rp-small {
