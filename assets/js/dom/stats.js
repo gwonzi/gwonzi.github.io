@@ -276,17 +276,34 @@ var s1g6_g = {
 
 // SEASONS GLOBAL HOLDS THE GAMES
 
+var played = {
+  s1: [1]
+};
+
+function count_ranks(season, played, player, rank) {
+  var x = 0;
+  for (var i = 0; i < played.length; i++) {
+    var game = "s" + season + "g" + (i + 1);
+    if (player[game].rank == rank) {
+      x += 1;
+    }
+  }
+  return x;
+}
+
 var seasons = {
   1: {
     games: [s1g1_g, s1g2_g, s1g3_g, s1g4_g, s1g5_g, s1g6_g],
     totals: {
       chris: {
         name: CHRIS,
-        rec_1st: 9,
+        rec_1st: function() {
+          return count_ranks(1, played, chris, 1);
+        },
         rec_2nd: 8,
         rec_3rd: 7,
         rec_4th: 6,
-        rp_tot: function () {
+        rp_tot: function() {
           return (this.rec_1st * 4) +
                  (this.rec_2nd * 3) +
                  (this.rec_3rd * 2) +
