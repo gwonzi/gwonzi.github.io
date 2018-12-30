@@ -281,23 +281,30 @@ var seasons = {
     games: [s1g1_g, s1g2_g, s1g3_g, s1g4_g, s1g5_g, s1g6_g],
     totals: {
       chris: {
+        name: CHRIS,
         rec_1st: 9,
         rec_2nd: 8,
         rec_3rd: 7,
         rec_4th: 6,
+        rp_tot: function () {
+          return (this.rec_1st * 4) +
+                 (this.rec_2nd * 3) +
+                 (this.rec_3rd * 2) +
+                 (this.rec_4th);
+        },
         bp_tot: 3
       },
       corey: {
-
+        name: COREY
       },
       eduardo: {
-
+        name: EDUARDO
       },
       ryan: {
-
+        name: RYAN
       },
       get_ranking: function(player) {
-        
+
       }
     }
   }

@@ -68,7 +68,7 @@ function make_ptable_for_season(season) {
       <td>' + points["chris"].rec_2nd + '</td> \
       <td>' + points["chris"].rec_3rd + '</td> \
       <td>' + points["chris"].rec_4th + '</td> \
-      <td> y </td> \
+      <td>' + points["chris"].rp_tot() + '</td> \
       <td>' + points["chris"].bp_tot + '</td> \
       <td>0th</td> \
     </tr> \
