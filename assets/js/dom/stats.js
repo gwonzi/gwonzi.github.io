@@ -73,7 +73,7 @@ var chris = {
       return total_bp(this.bp);
     }
   },
-  s1g2: {}
+  s1g2: {rank:1}
 };
 
 var corey = {
@@ -283,7 +283,6 @@ var played = {
 function count_ranks(season, played, player, rank) {
   var x = 0;
   for (var i = 0; i < played.length; i++) {
-    console.log("x");
     var game = "s" + season + "g" + (i + 1);
     if (player[game].rank == rank) {
       x += 1;
