@@ -45,9 +45,39 @@ $("#s1").click(function() {
       <td>0</td> \
       <td>0</td> \
       <td>0</td> \
-      <td></td> \
-      <td></td> \
-      <td>1st</td> \
+      <td>0</td> \
+      <td>0</td> \
+      <td>0th</td> \
+    </tr> \
+    <tr> \
+      <th>Corey</th> \
+      <td>0</td> \
+      <td>0</td> \
+      <td>0</td> \
+      <td>0</td> \
+      <td>0</td> \
+      <td>0</td> \
+      <td>0th</td> \
+    </tr> \
+    <tr> \
+      <th>Eduardo</th> \
+      <td>0</td> \
+      <td>0</td> \
+      <td>0</td> \
+      <td>0</td> \
+      <td>0</td> \
+      <td>0</td> \
+      <td>0th</td> \
+    </tr> \
+    <tr> \
+      <th>Ryan</th> \
+      <td>0</td> \
+      <td>0</td> \
+      <td>0</td> \
+      <td>0</td> \
+      <td>0</td> \
+      <td>0</td> \
+      <td>0th</td> \
     </tr> \
   </table>';
 
