@@ -258,10 +258,14 @@ var s1g2_g = {
   played: false
 };
 
+var s1g3_g = {
+  played: false
+}
+
 // SEASONS GLOBAL HOLDS THE GAMES
 
 var seasons = {
   1: {
-    games: [s1g1_g, s1g2_g]
+    games: [s1g1_g, s1g2_g, s1g3_g]
   }
 };
