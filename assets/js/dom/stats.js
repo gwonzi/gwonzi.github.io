@@ -305,7 +305,7 @@ var seasons = {
         rec_3rd: 7,
         rec_4th: 6,
         rp_tot: function() {
-          return (this.rec_1st * 4) +
+          return (this.rec_1st() * 4) +
                  (this.rec_2nd * 3) +
                  (this.rec_3rd * 2) +
                  (this.rec_4th);
