@@ -27,7 +27,7 @@ function make_rtable_row(game, name) {
     } else {
       return '\
         <tr> \
-          <th><a href="#">'+name+'</a></th> \
+          <th><em>'+name+'</em></th> \
           <td> - </td> \
           <td> - </td> \
           <td> - </td> \
