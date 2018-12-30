@@ -256,4 +256,12 @@ var s1g1_g = {
 
 var s1g2_g = {
   played: false
-}
+};
+
+// SEASONS GLOBAL HOLDS THE GAMES
+
+var seasons = {
+  1: {
+    games: [s1g1_g, s1g2_g]
+  }
+};
