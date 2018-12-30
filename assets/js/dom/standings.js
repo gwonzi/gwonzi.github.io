@@ -42,6 +42,7 @@ function make_rtable_row(game, name) {
 }
 
 function make_ptable_for_season(season) {
+  var points = seasons[season].totals
   return '\
   <table class="ptab"> \
     <tr> \
@@ -63,12 +64,12 @@ function make_ptable_for_season(season) {
     </tr> \
     <tr> \
       <th>Chris</th> \
-      <td>0</td> \
-      <td>0</td> \
-      <td>0</td> \
-      <td>0</td> \
-      <td>0</td> \
-      <td>0</td> \
+      <td>' + points.chris.rec_1st + '</td> \
+      <td>' + points.chris.rec_2nd + '</td> \
+      <td>' + points.chris.rec_3rd + '</td> \
+      <td>' + points.chris.rec_4th + '</td> \
+      <td> x </td> \
+      <td>' + points.chris.bp_tot + '</td> \
       <td>0th</td> \
     </tr> \
     <tr> \

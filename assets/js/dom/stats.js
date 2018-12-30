@@ -278,6 +278,27 @@ var s1g6_g = {
 
 var seasons = {
   1: {
-    games: [s1g1_g, s1g2_g, s1g3_g, s1g4_g, s1g5_g, s1g6_g]
+    games: [s1g1_g, s1g2_g, s1g3_g, s1g4_g, s1g5_g, s1g6_g],
+    totals: {
+      chris: {
+        rec_1st: 9,
+        rec_2nd: 8,
+        rec_3rd: 7,
+        rec_4th: 6,
+        bp_tot: 3
+      },
+      corey: {
+
+      },
+      eduardo: {
+
+      },
+      ryan: {
+
+      },
+      get_ranking: function(player) {
+        
+      }
+    }
   }
 };
