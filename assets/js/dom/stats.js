@@ -234,7 +234,7 @@ function get_rank(rank, players) {
   }
 }
 
-// GLOBALS VARIABLE FOR DISPLAYING ON SITE
+// GLOBAL VARIABLE FOR EACH GAME
 
 var s1g1_g = {
   played: true,
@@ -260,12 +260,24 @@ var s1g2_g = {
 
 var s1g3_g = {
   played: false
-}
+};
+
+var s1g4_g = {
+  played: false
+};
+
+var s1g5_g = {
+  played: false
+};
+
+var s1g6_g = {
+  played: false
+};
 
 // SEASONS GLOBAL HOLDS THE GAMES
 
 var seasons = {
   1: {
-    games: [s1g1_g, s1g2_g, s1g3_g]
+    games: [s1g1_g, s1g2_g, s1g3_g, s1g4_g, s1g5_g, s1g6_g]
   }
 };

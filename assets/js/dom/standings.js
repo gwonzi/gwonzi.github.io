@@ -1,7 +1,7 @@
 $.getScript("/assets/js/dom/stats.js")
 
 function make_rtable_for_season(season) {
-  var start = '\
+  var txt = '\
   <table class="rtab"> \
     <tr> \
       <th>Game</th> \
@@ -12,7 +12,11 @@ function make_rtable_for_season(season) {
     </tr>';
   var end = '</table>';
   var games = seasons[season].games;
-  return start + make_rtable_row(games[0], "S1G1") + make_rtable_row(games[1], "S1G2") + make_rtable_row(games[2], "S1G3 test") + end;
+  for (var g in games) {
+    var title = "S" + season + "G" + (g+1);
+    txt += make_rtable_row(games[g], "S1G1");
+  }
+  return txt + end;
 }
 
 function make_rtable_row(game, name) {
