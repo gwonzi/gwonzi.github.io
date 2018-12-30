@@ -11,8 +11,8 @@ $("#s1").click(function() {
       <th>4th</th> \
     </tr> \
     <tr> \
-      <th>1</th> \
-      <td>' + s1g1_globals.first.ref() + '</td> \
+      <th><a href="' + s1g1_g.video_url + '" target="_blank">S1G1</a></th> \
+      <td>' + s1g1_g.first.ref() + '</td> \
       <td>Ryan</td> \
       <td>Eduardo</td> \
       <td>Corey</td> \
@@ -44,7 +44,7 @@ $("#s1").click(function() {
       <td>0</td> \
       <td>0</td> \
       <td>0</td> \
-      <td>4</td> \
+      <td></td> \
       <td>' + chris.s1g1.bp_total() + '</td> \
       <td>1st</td> \
     </tr> \

@@ -12,8 +12,16 @@ const NARSET = "Narset, Enlightened Master";
 
 function deck_link(name, deck) {
   var url = deck.url;
-  var txt = deck.short_name + ' ' + deck.version;
+  var txt = deck.short_name;
   return name + ' (<a href="' + url + '" target="_blank">' + txt + '</a>)';
+}
+
+function total_bp(bp) {
+  var i = 0;
+  for (var key in bp) {
+    i += bp[key];
+  }
+  return i;
 }
 
 // SEASON ONE STATISTICS BY PLAYER
@@ -32,6 +40,20 @@ var chris = {
     },
     order: 2,
     rank: 1,
+    turns: 11,
+    stats: {
+      damage: 87,
+      lifegain: 0,
+      carddraw_direct: 15,
+      carddraw_indirect: 7,
+      removal: 2,
+      counterspells: 0,
+      boardwipes: 0,
+      creatures: 17,
+      tutors: 3,
+      lands_played: 10,
+      lands_in_play: 10,
+    },
     bp: {
       blood: 1,
       counter: 0,
@@ -48,11 +70,7 @@ var chris = {
       hero: 0
     },
     bp_total: function() {
-      var i = 0;
-      for (var key in this.bp) {
-        i += this.bp[key];
-      }
-      return i;
+      return total_bp(this.bp);
     }
   },
   s1g2: {}
@@ -65,7 +83,7 @@ var s1g1_ranks = function() {
   }
 }
 */
-var s1g1_globals = {
+var s1g1_g = {
   video_url: "https://www.youtube.com/watch?v=1CqYDICrI_0",
   first: chris.s1g1,
   //second: s1g1_ryan,
