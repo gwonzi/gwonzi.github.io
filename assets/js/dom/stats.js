@@ -229,7 +229,7 @@ var ryan = {
 function get_rank(rank, players) {
   for (var p in players) {
     if (players[p].rank == rank) {
-      return players[p];
+      return players[p].ref();
     }
   }
 }
