@@ -12,10 +12,10 @@ $("#s1").click(function() {
     </tr> \
     <tr> \
       <th><a href="' + s1g1_g.video_url + '" target="_blank">S1G1</a></th> \
-      <td>' + s1g1_g.first.ref() + '</td> \
-      <td>Ryan</td> \
-      <td>Eduardo</td> \
-      <td>Corey</td> \
+      <td>' + s1g1_g.first().ref() + '</td> \
+      <td>' + s1g1_g.second().ref() + '</td> \
+      <td>' + s1g1_g.third().ref() + '</td> \
+      <td>' + s1g1_g.fourth().ref() + '</td> \
     </tr> \
   </table>';
 
