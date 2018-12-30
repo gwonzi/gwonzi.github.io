@@ -11,18 +11,29 @@ function make_rtable_for_season(season) {
       <th>4th</th> \
     </tr>';
   end = '</table>';
-  return start + make_rtable_row(s1g1_g, "S1G1") + end;
+  return start + make_rtable_row(s1g1_g, "S1G1") + make_rtable_row(s1g2_g, "S1G2") + end;
 }
 
 function make_rtable_row(game, name) {
-  return '\
-    <tr> \
-      <th><a href="'+game.video_url+'" target="_blank">'+name+'</a></th> \
-      <td>' + game.first() + '</td> \
-      <td>' + game.second() + '</td> \
-      <td>' + game.third() + '</td> \
-      <td>' + game.fourth() + '</td> \
-    </tr>';
+  if (game.played) {
+    return '\
+      <tr> \
+        <th><a href="'+game.video_url+'" target="_blank">'+name+'</a></th> \
+        <td>' + game.first() + '</td> \
+        <td>' + game.second() + '</td> \
+        <td>' + game.third() + '</td> \
+        <td>' + game.fourth() + '</td> \
+      </tr>';
+    } else {
+      return '\
+        <tr> \
+          <th><a href="#">'+name+'</a></th> \
+          <td> - </td> \
+          <td> - </td> \
+          <td> - </td> \
+          <td> - </td> \
+        </tr>';
+    }
 }
 
 function make_ptable_for_season(season) {

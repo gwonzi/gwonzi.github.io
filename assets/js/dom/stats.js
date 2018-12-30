@@ -237,6 +237,7 @@ function get_rank(rank, players) {
 // GLOBALS VARIABLE FOR DISPLAYING ON SITE
 
 var s1g1_g = {
+  played: true,
   video_url: "https://www.youtube.com/watch?v=1CqYDICrI_0",
   players: [chris.s1g1, corey.s1g1, eduardo.s1g1, ryan.s1g1],
   first: function() {
@@ -252,3 +253,7 @@ var s1g1_g = {
     return get_rank(4, this.players);
   }
 };
+
+var s1g2_g = {
+  played: false
+}
