@@ -13,7 +13,7 @@ const NARSET = "Narset, Enlightened Master";
 function deck_link(name, deck) {
   var url = deck.url;
   var txt = deck.short_name;
-  return name + ' (<a href="' + url + '" target="_blank">' + txt + '</a>)';
+  return name + '<br />(<a href="' + url + '" target="_blank">' + txt + '</a>)';
 }
 
 function total_bp(bp) {
