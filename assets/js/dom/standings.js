@@ -14,7 +14,7 @@ function make_rtable_for_season(season) {
   var games = seasons[season].games;
   for (var g in games) {
     var title = "S" + season + "G" + (g+1);
-    txt += make_rtable_row(games[g], "S1G1");
+    txt += make_rtable_row(games[g], title);
   }
   return txt + end;
 }
