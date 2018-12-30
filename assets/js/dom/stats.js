@@ -1,27 +1,37 @@
-// when using a player's name, we use the ALL CAPS constant
-// instead of a string or variable to avoid errors/typos
+// when using these strings, use the ALL CAPS constant to avoid errors/typos
 
 const CHRIS = "Chris";
 const COREY = "Corey";
 const EDUARDO = "Eduardo";
 const RYAN = "Ryan";
 
-function linkify(name, url, txt) {
+const BREYA = "Breya, Etherium Shaper";
+const YIDRIS = "Yidris, Maelstrom Wielder";
+const KUMENA = "Kumena, Tyrant of Orazca";
+const NARSET = "Narset, Enlightened Master";
+
+function deck_link(name, deck) {
+  var url = deck.url;
+  var txt = deck.short_name + ' ' + deck.version;
   return name + ' (<a href="' + url + '" target="_blank">' + txt + '</a>)';
 }
 
-// SEASON ONE, GAME ONE STATISTICS BY PLAYER
+// SEASON ONE STATISTICS BY PLAYER
 
 var chris = {
   s1g1: {
     name: CHRIS,
-    rank: 1, // 1, 2, 3, or 4
-    deck_name: "Breya",
-    deck_ver: "1.0",
-    deck_url: "https://www.mtggoldfish.com/deck/1483882",
-    ref: function() {
-      return linkify(this.name, this.deck_url, this.deck_name);
+    deck: {
+      commander: BREYA,
+      short_name: "Breya",
+      version: "1.0",
+      url: "https://www.mtggoldfish.com/deck/1483882",
     },
+    ref: function() {
+      return deck_link(this.name, this.deck);
+    },
+    order: 2,
+    rank: 1,
     bp: {
       blood: 1,
       counter: 0,
