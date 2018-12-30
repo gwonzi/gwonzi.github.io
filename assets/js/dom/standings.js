@@ -1,6 +1,10 @@
 $.getScript("/assets/js/dom/stats.js")
 
 $("#s1").click(function() {
+  var fst = s1g1_g.first();
+  var snd = s1g1_g.second();
+  var trd = s1g1_g.third();
+  var fth = s1g1_g.fourth();
   var rtable = '\
   <table class="rtab"> \
     <tr> \
@@ -12,10 +16,10 @@ $("#s1").click(function() {
     </tr> \
     <tr> \
       <th><a href="' + s1g1_g.video_url + '" target="_blank">S1G1</a></th> \
-      <td>' + s1g1_g.first().ref() + '</td> \
-      <td>' + s1g1_g.second().ref() + '</td> \
-      <td>' + s1g1_g.third().ref() + '</td> \
-      <td>' + s1g1_g.fourth().ref() + '</td> \
+      <td>' + fst.ref() + '</td> \
+      <td>' + snd.ref() + '</td> \
+      <td>' + trd.ref() + '</td> \
+      <td>' + fth.ref() + '</td> \
     </tr> \
   </table>';
 
