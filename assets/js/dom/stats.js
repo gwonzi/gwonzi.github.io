@@ -275,15 +275,15 @@ var s1g6_g = {
 };
 
 // SEASONS GLOBAL HOLDS THE GAMES
-
+/*
 var played = {
   s1: [1]
 };
-
+*/
 function count_ranks(season, played, player, rank) {
-  return 5;
   var x = 0;
   for (var i = 0; i < played.length; i++) {
+    console.log("x");
     var game = "s" + season + "g" + (i + 1);
     if (player[game].rank == rank) {
       x += 1;
@@ -299,7 +299,7 @@ var seasons = {
       chris: {
         name: CHRIS,
         rec_1st: function() {
-          return count_ranks(1, played, chris, 1);
+          return count_ranks(1, [1], chris, 1);
         },
         rec_2nd: 8,
         rec_3rd: 7,
