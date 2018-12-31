@@ -329,7 +329,7 @@ function season_ranking(season) {
     } else {
       // deal with tie
     }
-    r_tots.splice(ix, 1);
+    r_tots[ix] = -1; // set the max to -1 so next max is 2nd, etc.
   }
   return [
     ps[ranking[0]],
