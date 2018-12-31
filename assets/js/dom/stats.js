@@ -333,7 +333,7 @@ function season_ranking(season) {
   }
   var obj = {};
   var final_rank = 1;
-  for (var k = 0; k < ranking.length; k++;) {
+  for (var k = 0; k < ranking.length; k++) {
     obj[final_rank] = ranking[k];
     final_rank += ranking[k].length;
   }
