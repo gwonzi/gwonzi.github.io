@@ -85,7 +85,6 @@ function make_ptable_for_season(season) {
 }
 
 $("#s1").click(function() {
-  var game = s1g1_g;
   var rtable = make_rtable_for_season(1);
   var ptable = make_ptable_for_season(1);
 
