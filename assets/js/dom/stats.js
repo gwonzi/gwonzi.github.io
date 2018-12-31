@@ -73,7 +73,7 @@ var chris = {
       return total_bp(this.bp);
     }
   },
-  s1g2: {rank:1}
+  s1g2: {rank:2}
 };
 
 var corey = {
