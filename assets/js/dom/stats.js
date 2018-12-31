@@ -341,11 +341,11 @@ function season_ranking(season) {
   */
   var pairings = []; // [{chris:1},{ryan:1},{eduardo:3},{corey:4}]
   var final_rank = 1;
-  for (var rank in rankings) {
-    var offset = rankings[rank].length;
-    for (var indx in rankings[rank]) {
+  for (var rank in ranking) {
+    var offset = ranking[rank].length;
+    for (var indx in ranking[rank]) {
       pairings.push({
-        "name": rankings[rank][indx],
+        "name": ranking[rank][indx],
         "rank": final_rank});
     }
     final_rank += offset;
