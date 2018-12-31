@@ -298,6 +298,47 @@ function count_bp(season, player) {
   return x;
 }
 
+function index_max(arr) {
+  var mx = 0;
+  var n = [0];
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] > mx) {
+      mx = arr[i];
+      n = [i];
+    } else if (arr[i] === mx) {
+      n.push(i); // tie means append the index instead of replacing it
+    }
+  }
+  return n;
+}
+
+function season_ranking(season) {
+  var t = seasons[season].totals;
+  var ps = ['chris', 'corey', 'eduardo', 'ryan'];
+  var r_tots = [];
+  var b_tots = [];
+  var ranking = [];
+  for (var i = 0; i < ps.length; i++) {
+    r_tots.push(t[ps[i]].rp_tot());
+    p_tots.push(t[ps[i]].bp_tot());
+  }
+  for (var n = 1; n <= 4; n++) {
+    var ix = index_max(r_tots);
+    if (ix.length == 1) {
+      ranking.push(ix[0]);
+    } else {
+      // deal with tie
+    }
+    r_tots.splice(ix, 1);
+  }
+  return [
+    ps[ranking[0]],
+    ps[ranking[1]],
+    ps[ranking[2]],
+    ps[ranking[3]]
+  ];
+}
+
 var seasons = {
   1: {
     played: [1],
@@ -398,9 +439,6 @@ var seasons = {
         bp_tot: function() {
           return count_bp(1, ryan);
         }
-      },
-      get_ranking: function(player) {
-
       }
     }
   }

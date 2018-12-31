@@ -52,7 +52,7 @@ function make_ptable_row(name, season) {
     <td>' + points[name].rec_4th() + '</td> \
     <td>' + points[name].rp_tot() + '</td> \
     <td>' + points[name].bp_tot() + '</td> \
-    <td>0th</td> \
+    <td>' + season_ranking(1) + '</td> \
   </tr>';
 }
 
