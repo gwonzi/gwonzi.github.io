@@ -288,6 +288,16 @@ function count_ranks(season, player, rank) {
   return x;
 }
 
+function count_bp(season, player) {
+  var played = seasons[season].played;
+  var x = 0;
+  for (var i = 0; i < played.length; i++) {
+    var game = "s" + season + "g" + (i + 1);
+    x += player[game].bp_total();
+  }
+  return x;
+}
+
 var seasons = {
   1: {
     played: [1],
@@ -313,7 +323,9 @@ var seasons = {
                  (this.rec_3rd() * 2) +
                  (this.rec_4th());
         },
-        bp_tot: 3
+        bp_tot: function() {
+          return count_bp(1, chris);
+        }
       },
       corey: {
         name: COREY,
@@ -334,6 +346,9 @@ var seasons = {
                  (this.rec_2nd() * 3) +
                  (this.rec_3rd() * 2) +
                  (this.rec_4th());
+        },
+        bp_tot: function() {
+          return count_bp(1, corey);
         }
       },
       eduardo: {
@@ -355,7 +370,10 @@ var seasons = {
                  (this.rec_2nd() * 3) +
                  (this.rec_3rd() * 2) +
                  (this.rec_4th());
-          }
+        },
+        bp_tot: function() {
+            return count_bp(1, eduardo);
+        }
       },
       ryan: {
         name: RYAN,
@@ -376,7 +394,10 @@ var seasons = {
                  (this.rec_2nd() * 3) +
                  (this.rec_3rd() * 2) +
                  (this.rec_4th());
-          }
+        },
+        bp_tot: function() {
+          return count_bp(1, ryan);
+        }
       },
       get_ranking: function(player) {
 
