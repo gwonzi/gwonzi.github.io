@@ -189,7 +189,7 @@ var ryan = {
       return deck_link(this.name, this.deck);
     },
     order: 3,
-    rank: 1,
+    rank: 2,
     turns: 12,
     stats: {
       damage: 44,
@@ -331,22 +331,24 @@ function season_ranking(season) {
     }
     ranking.push(ns);
   }
+  /*
   var obj = {};
   var final_rank = 1;
   for (var k = 0; k < ranking.length; k++) {
     obj[final_rank] = ranking[k];
     final_rank += ranking[k].length;
   }
+  */
   var pairings = []; // [{chris:1},{ryan:1},{eduardo:3},{corey:4}]
-  console.log("before loop: " + pairings);
-  for (var rank in obj) {
-    if (obj.hasOwnProperty(rank)) {
-      for (var indx in obj[rank]) {
-        pairings.push({
-          "name": obj[rank][indx],
-          "rank": rank});
-      }
+  var final_rank = 1;
+  for (var rank in rankings) {
+    var offset = rankings[rank].length;
+    for (var indx in rankings[rank]) {
+      pairings.push({
+        "name": rankings[rank][indx],
+        "rank": final_rank});
     }
+    final_rank += offset;
   }
   return pairings;
 }
