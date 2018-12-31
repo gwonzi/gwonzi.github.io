@@ -44,16 +44,16 @@ function make_rtable_row(game, name) {
 function make_ptable_row(name, season, pos) {
   var position;
   switch (pos) {
-    case "1":
+    case 1:
       position = "1st";
       break;
-    case "2":
+    case 2:
       position = "2nd";
       break;
-    case "3":
+    case 3:
       position = "3rd";
       break;
-    case "4":
+    case 4:
       position = "4th";
       break;
   }

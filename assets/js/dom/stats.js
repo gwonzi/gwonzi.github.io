@@ -331,14 +331,6 @@ function season_ranking(season) {
     }
     ranking.push(ns);
   }
-  /*
-  var obj = {};
-  var final_rank = 1;
-  for (var k = 0; k < ranking.length; k++) {
-    obj[final_rank] = ranking[k];
-    final_rank += ranking[k].length;
-  }
-  */
   var pairings = []; // [{chris:1},{ryan:1},{eduardo:3},{corey:4}]
   var final_rank = 1;
   for (var rank in ranking) {
