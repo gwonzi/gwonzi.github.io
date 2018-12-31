@@ -42,6 +42,7 @@ function make_rtable_row(game, name) {
 }
 
 function make_ptable_row(name) {
+  var points = seasons[season].totals;
   var capname = name.charAt(0).toUpperCase() + name.slice(1);
   return '<tr> \
     <th>' + capname + '</th> \
@@ -56,7 +57,6 @@ function make_ptable_row(name) {
 }
 
 function make_ptable_for_season(season) {
-  var points = seasons[season].totals;
   var txt = '\
   <table class="ptab"> \
     <tr> \
