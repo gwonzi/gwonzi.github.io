@@ -345,7 +345,6 @@ function season_ranking(season) {
         pairings.push({
           "name": obj[rank][indx],
           "rank": rank});
-        console.log(pairings[0]["name"] +" / "+pairings[0]["rank"]);
       }
     }
   }

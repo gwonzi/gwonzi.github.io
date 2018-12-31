@@ -93,6 +93,7 @@ function make_ptable_for_season(season) {
     </tr>';
   var end = '</table>';
   var pairings = season_ranking(season);
+  console.log(pairings);
   for (var i = 0; i < pairings.length; i++) {
     var pl = pairings[i];
     txt += make_ptable_row(pl["name"], season, pl["rank"]);
