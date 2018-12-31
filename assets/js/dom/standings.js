@@ -41,7 +41,7 @@ function make_rtable_row(game, name) {
     }
 }
 
-function make_ptable_row(name) {
+function make_ptable_row(name, season) {
   var points = seasons[season].totals;
   var capname = name.charAt(0).toUpperCase() + name.slice(1);
   return '<tr> \
@@ -79,7 +79,7 @@ function make_ptable_for_season(season) {
   var end = '</table>';
   var players = ["chris","corey","ryan","eduardo"];
   for (var i = 0; i < players.length; i++) {
-    txt += make_ptable_row(players[i]);
+    txt += make_ptable_row(players[i], season);
   }
   return txt + end;
 }
