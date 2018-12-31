@@ -334,6 +334,7 @@ var seasons = {
                  (this.rec_2nd() * 3) +
                  (this.rec_3rd() * 2) +
                  (this.rec_4th());
+        }
       },
       eduardo: {
         name: EDUARDO,
@@ -354,6 +355,7 @@ var seasons = {
                  (this.rec_2nd() * 3) +
                  (this.rec_3rd() * 2) +
                  (this.rec_4th());
+          }
       },
       ryan: {
         name: RYAN,
@@ -374,6 +376,7 @@ var seasons = {
                  (this.rec_2nd() * 3) +
                  (this.rec_3rd() * 2) +
                  (this.rec_4th());
+          }
       },
       get_ranking: function(player) {
 
