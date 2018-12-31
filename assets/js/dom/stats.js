@@ -320,7 +320,7 @@ function season_ranking(season) {
   var ranking = [];
   for (var i = 0; i < ps.length; i++) {
     r_tots.push(t[ps[i]].rp_tot());
-    p_tots.push(t[ps[i]].bp_tot());
+    b_tots.push(t[ps[i]].bp_tot());
   }
   for (var n = 1; n <= 4; n++) {
     var ix = index_max(r_tots);
