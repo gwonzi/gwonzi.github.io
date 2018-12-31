@@ -303,15 +303,19 @@ var seasons = {
           return count_ranks(1, chris, 1);
         },
         rec_2nd: function() {
-          return count_ranks(1, [1], chris, 1);
+          return count_ranks(1, chris, 2);
         },
-        rec_3rd: 7,
-        rec_4th: 6,
+        rec_3rd: function() {
+          return count_ranks(1, chris, 3);
+        },
+        rec_4th: function() {
+          return count_ranks(1, chris, 4);
+        },
         rp_tot: function() {
           return (this.rec_1st() * 4) +
-                 (this.rec_2nd * 3) +
-                 (this.rec_3rd * 2) +
-                 (this.rec_4th);
+                 (this.rec_2nd() * 3) +
+                 (this.rec_3rd() * 2) +
+                 (this.rec_4th());
         },
         bp_tot: 3
       },
