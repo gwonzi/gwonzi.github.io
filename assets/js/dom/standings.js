@@ -44,16 +44,16 @@ function make_rtable_row(game, name) {
 function make_ptable_row(name, season, pos) {
   var position;
   switch (pos) {
-    case 0:
+    case "1":
       position = "1st";
       break;
-    case 1:
+    case "2":
       position = "2nd";
       break;
-    case 2:
+    case "3":
       position = "3rd";
       break;
-    case 3:
+    case "4":
       position = "4th";
       break;
   }
@@ -93,7 +93,6 @@ function make_ptable_for_season(season) {
     </tr>';
   var end = '</table>';
   var pairings = season_ranking(season);
-  console.log(pairings);
   for (var i = 0; i < pairings.length; i++) {
     var pl = pairings[i];
     txt += make_ptable_row(pl["name"], season, pl["rank"]);
