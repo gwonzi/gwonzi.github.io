@@ -338,6 +338,7 @@ function season_ranking(season) {
     final_rank += ranking[k].length;
   }
   var pairings = []; // [{chris:1},{ryan:1},{eduardo:3},{corey:4}]
+  console.log(pairings);
   for (var rank in obj) {
     if (obj.hasOwnProperty(rank)) {
       for (var indx in obj[rank]) {
