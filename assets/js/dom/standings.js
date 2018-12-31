@@ -32,7 +32,7 @@ function make_rtable_row(game, name) {
     } else {
       return '\
         <tr> \
-          <th><em style="color:#888">'+name+'</em></th> \
+          <th><em style="color:#888">' + name + '</em></th> \
           <td> - </td> \
           <td> - </td> \
           <td> - </td> \
@@ -41,9 +41,23 @@ function make_rtable_row(game, name) {
     }
 }
 
+function make_ptable_row(name) {
+  var capname = name.charAt(0).toUpperCase() + name.slice(1);
+  return '<tr> \
+    <th>' + capname + '</th> \
+    <td>' + points[name].rec_1st() + '</td> \
+    <td>' + points[name].rec_2nd() + '</td> \
+    <td>' + points[name].rec_3rd() + '</td> \
+    <td>' + points[name].rec_4th() + '</td> \
+    <td>' + points[name].rp_tot() + '</td> \
+    <td>' + points[name].bp_tot + '</td> \
+    <td>0th</td> \
+  </tr>';
+}
+
 function make_ptable_for_season(season) {
-  var points = seasons[season].totals
-  return '\
+  var points = seasons[season].totals;
+  var txt = '\
   <table class="ptab"> \
     <tr> \
       <th>Player</th> \
@@ -61,48 +75,13 @@ function make_ptable_for_season(season) {
       <td class="emptycell"></td> \
       <td class="emptycell"></td> \
       <td class="emptycell"></td> \
-    </tr> \
-    <tr> \
-      <th>Chris</th> \
-      <td>' + points["chris"].rec_1st() + '</td> \
-      <td>' + points["chris"].rec_2nd() + '</td> \
-      <td>' + points["chris"].rec_3rd() + '</td> \
-      <td>' + points["chris"].rec_4th() + '</td> \
-      <td>' + points["chris"].rp_tot() + '</td> \
-      <td>' + points["chris"].bp_tot + '</td> \
-      <td>0th</td> \
-    </tr> \
-    <tr> \
-      <th>Corey</th> \
-      <td>0</td> \
-      <td>0</td> \
-      <td>0</td> \
-      <td>0</td> \
-      <td>0</td> \
-      <td>0</td> \
-      <td>0th</td> \
-    </tr> \
-    <tr> \
-      <th>Eduardo</th> \
-      <td>0</td> \
-      <td>0</td> \
-      <td>0</td> \
-      <td>0</td> \
-      <td>0</td> \
-      <td>0</td> \
-      <td>0th</td> \
-    </tr> \
-    <tr> \
-      <th>Ryan</th> \
-      <td>0</td> \
-      <td>0</td> \
-      <td>0</td> \
-      <td>0</td> \
-      <td>0</td> \
-      <td>0</td> \
-      <td>0th</td> \
-    </tr> \
-  </table>';
+    </tr>';
+  var end = '</table>';
+  var players = ["chris","corey","ryan","eduardo"];
+  for (var i = 0; i < players.length; i++) {
+    txt += make_ptable_row(players[i]);
+  }
+  return txt + end;
 }
 
 $("#s1").click(function() {

@@ -73,7 +73,7 @@ var chris = {
       return total_bp(this.bp);
     }
   },
-  s1g2: {rank:4}
+  s1g2: {}
 };
 
 var corey = {
@@ -275,11 +275,7 @@ var s1g6_g = {
 };
 
 // SEASONS GLOBAL HOLDS THE GAMES
-/*
-var played = {
-  s1: [1]
-};
-*/
+
 function count_ranks(season, player, rank) {
   var played = seasons[season].played;
   var x = 0;
@@ -294,7 +290,7 @@ function count_ranks(season, player, rank) {
 
 var seasons = {
   1: {
-    played: [1,2],
+    played: [1],
     games: [s1g1_g, s1g2_g, s1g3_g, s1g4_g, s1g5_g, s1g6_g],
     totals: {
       chris: {
@@ -320,13 +316,64 @@ var seasons = {
         bp_tot: 3
       },
       corey: {
-        name: COREY
+        name: COREY,
+        rec_1st: function() {
+          return count_ranks(1, corey, 1);
+        },
+        rec_2nd: function() {
+          return count_ranks(1, corey, 2);
+        },
+        rec_3rd: function() {
+          return count_ranks(1, corey, 3);
+        },
+        rec_4th: function() {
+          return count_ranks(1, corey, 4);
+        },
+        rp_tot: function() {
+          return (this.rec_1st() * 4) +
+                 (this.rec_2nd() * 3) +
+                 (this.rec_3rd() * 2) +
+                 (this.rec_4th());
       },
       eduardo: {
-        name: EDUARDO
+        name: EDUARDO,
+        rec_1st: function() {
+          return count_ranks(1, eduardo, 1);
+        },
+        rec_2nd: function() {
+          return count_ranks(1, eduardo, 2);
+        },
+        rec_3rd: function() {
+          return count_ranks(1, eduardo, 3);
+        },
+        rec_4th: function() {
+          return count_ranks(1, eduardo, 4);
+        },
+        rp_tot: function() {
+          return (this.rec_1st() * 4) +
+                 (this.rec_2nd() * 3) +
+                 (this.rec_3rd() * 2) +
+                 (this.rec_4th());
       },
       ryan: {
-        name: RYAN
+        name: RYAN,
+        rec_1st: function() {
+          return count_ranks(1, ryan, 1);
+        },
+        rec_2nd: function() {
+          return count_ranks(1, ryan, 2);
+        },
+        rec_3rd: function() {
+          return count_ranks(1, ryan, 3);
+        },
+        rec_4th: function() {
+          return count_ranks(1, ryan, 4);
+        },
+        rp_tot: function() {
+          return (this.rec_1st() * 4) +
+                 (this.rec_2nd() * 3) +
+                 (this.rec_3rd() * 2) +
+                 (this.rec_4th());
       },
       get_ranking: function(player) {
 
