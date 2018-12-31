@@ -280,7 +280,8 @@ var played = {
   s1: [1]
 };
 */
-function count_ranks(season, played, player, rank) {
+function count_ranks(season, player, rank) {
+  var played = seasons[season].played;
   var x = 0;
   for (var i = 0; i < played.length; i++) {
     var game = "s" + season + "g" + (i + 1);
@@ -293,14 +294,17 @@ function count_ranks(season, played, player, rank) {
 
 var seasons = {
   1: {
+    played: [1],
     games: [s1g1_g, s1g2_g, s1g3_g, s1g4_g, s1g5_g, s1g6_g],
     totals: {
       chris: {
         name: CHRIS,
         rec_1st: function() {
+          return count_ranks(1, chris, 1);
+        },
+        rec_2nd: function() {
           return count_ranks(1, [1], chris, 1);
         },
-        rec_2nd: 8,
         rec_3rd: 7,
         rec_4th: 6,
         rp_tot: function() {
