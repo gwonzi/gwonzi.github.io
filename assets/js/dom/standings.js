@@ -56,7 +56,6 @@ function make_ptable_row(name, season, pos) {
     case 3:
       position = "4th";
       break;
-
   }
   var points = seasons[season].totals;
   var capname = name.charAt(0).toUpperCase() + name.slice(1);
@@ -93,9 +92,10 @@ function make_ptable_for_season(season) {
       <td class="emptycell"></td> \
     </tr>';
   var end = '</table>';
-  var players = season_ranking(season);
-  for (var i = 0; i < players.length; i++) {
-    txt += make_ptable_row(players[i], season, i);
+  var pairings = season_ranking(season);
+  for (var i = 0; i < pairings.length; i++) {
+    pl = pairings[i];
+    txt += make_ptable_row(pl["name"], season, pl["rank"]);
   }
   return txt + end;
 }

@@ -304,7 +304,7 @@ function index_max(arr) {
   for (var i = 0; i < arr.length; i++) {
     if (arr[i] > mx) {
       mx = arr[i];
-      n = [i];
+      n = [i]; // keep index in array format for for loops
     } else if (arr[i] === mx) {
       n.push(i); // tie means append the index instead of replacing it
     }
@@ -324,19 +324,30 @@ function season_ranking(season) {
   }
   for (var n = 1; n <= 4; n++) {
     var ix = index_max(r_tots);
-    if (ix.length == 1) {
-      ranking.push(ix[0]);
-    } else {
-      // deal with tie
+    var ns = [];
+    for (var j = 0; j < ix.length; j++) {
+      ns.push(ps[ix[j]]);
+      r_tots[ix[j]] = -1; // set max(s) to -1 so next max is next rank, etc.
     }
-    r_tots[ix] = -1; // set the max to -1 so next max is 2nd, etc.
+    ranking.push(ns);
   }
-  return [
-    ps[ranking[0]],
-    ps[ranking[1]],
-    ps[ranking[2]],
-    ps[ranking[3]]
-  ];
+  var obj = {};
+  var final_rank = 1;
+  for (var k = 0; k < ranking.length; k++;) {
+    obj[final_rank] = ranking[k];
+    final_rank += ranking[k].length;
+  }
+  var pairings = []; // [{chris:1},{ryan:1},{eduardo:3},{corey:4}]
+  for (var rank in obj) {
+    if (obj.hasOwnProperty(rank)) {
+      for (var indx in obj[rank]) {
+        pairings.push({
+          "name": obj[rank][indx],
+          "rank": rank});
+      }
+    }
+  }
+  return pairings;
 }
 
 var seasons = {
