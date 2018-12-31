@@ -89,7 +89,7 @@ var corey = {
       return deck_link(this.name, this.deck);
     },
     order: 4,
-    rank: 3,
+    rank: 4,
     turns: 11,
     stats: {
       damage: 3,
@@ -189,7 +189,7 @@ var ryan = {
       return deck_link(this.name, this.deck);
     },
     order: 3,
-    rank: 1,
+    rank: 2,
     turns: 12,
     stats: {
       damage: 44,
