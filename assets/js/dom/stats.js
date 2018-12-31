@@ -294,7 +294,7 @@ function count_ranks(season, player, rank) {
 
 var seasons = {
   1: {
-    played: [1],
+    played: [1,2],
     games: [s1g1_g, s1g2_g, s1g3_g, s1g4_g, s1g5_g, s1g6_g],
     totals: {
       chris: {
