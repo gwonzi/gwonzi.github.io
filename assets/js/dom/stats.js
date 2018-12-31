@@ -189,7 +189,7 @@ var ryan = {
       return deck_link(this.name, this.deck);
     },
     order: 3,
-    rank: 2,
+    rank: 1,
     turns: 12,
     stats: {
       damage: 44,
