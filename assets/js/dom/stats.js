@@ -312,6 +312,13 @@ function index_max(arr) {
   return n;
 }
 
+function allequal(arr) {
+  var fst = arr[0];
+  return arr.every(function(elem) {
+    return elem === fst;
+  });
+}
+
 function season_ranking(season) {
   var t = seasons[season].totals;
   var ps = ['chris', 'corey', 'eduardo', 'ryan'];
