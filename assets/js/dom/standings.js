@@ -107,4 +107,6 @@ $("#s1").click(function() {
   $("#rtable").html(rtable);
   $("#ptable").html(ptable);
   $("#stitle").html("Season 1 Standings");
+  $("#gameranks").html("Season 1 Game Rankings");
+  $("#seasonpoints").html("Season 1 Season Points");
 });

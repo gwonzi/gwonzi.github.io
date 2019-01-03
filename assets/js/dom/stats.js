@@ -324,14 +324,13 @@ function season_ranking(season) {
   var ps = ['chris', 'corey', 'eduardo', 'ryan'];
   var r_tots = [];
   var b_tots = [];
-  var ranking = [];
   for (var i = 0; i < ps.length; i++) {
     r_tots.push(t[ps[i]].rp_tot());
     b_tots.push(t[ps[i]].bp_tot());
   }
   var loops = 4;
-  var n = 0;
-  while (n < loops) {
+  var ranking = [];
+  while (loops > 0) {
     var ix = index_max(r_tots);
     loops -= ix.length;
     var ns = [];
@@ -341,7 +340,7 @@ function season_ranking(season) {
     }
     ranking.push(ns);
   }
-  var pairings = []; // [{chris:1},{ryan:1},{eduardo:3},{corey:4}]
+  var pairings = []; // [{chris:1},{ryan:2},{eduardo:3},{corey:4}]
   var final_rank = 1;
   for (var rank in ranking) {
     var offset = ranking[rank].length;
