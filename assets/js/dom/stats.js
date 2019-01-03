@@ -238,6 +238,10 @@ function get_rank(rank, players) {
 
 var s1g1_g = {
   played: true,
+  start: new Date(2018, 11, 1, 14, 0),
+  // new Date(yyyy, month 0-11, day, 24hr, min)
+  finish: new Date(2018, 11, 1, 16, 30),
+  turns: 13,
   video_url: "https://www.youtube.com/watch?v=1CqYDICrI_0",
   players: [chris.s1g1, corey.s1g1, eduardo.s1g1, ryan.s1g1],
   first: function() {
