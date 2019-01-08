@@ -3233,3 +3233,7 @@ table.rtab, table.ptab {
 .emptycell {
 	background: #bbb;
 }
+
+::placeholder, ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder, :-moz-placeholder {
+	opacity: 0.35;
+}
