@@ -3234,22 +3234,32 @@ table.rtab, table.ptab {
 	background: #bbb;
 }
 
+::placeholder {
+    color: #5b5b5b;
+    opacity: 0.5 !important;
+		font-style: italic;
+}
+
 ::-webkit-input-placeholder {
-    color: #FF0000;
-    opacity: 0.35 !important; /* for older chrome versions. may no longer apply. */
+    color: #5b5b5b;
+    opacity: 0.5 !important; /* for older chrome versions. */
+		font-style: italic;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-    color: #FF0000;
-    opacity: 0.35 !important;
+    color: #5b5b5b;
+    opacity: 0.5 !important;
+		font-style: italic;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-    color: #FF0000;
-    opacity: 0.35 !important;
+    color: #5b5b5b;
+    opacity: 0.5 !important;
+		font-style: italic;
 }
 
 :-ms-input-placeholder {
-   color: #FF0000;
-	 opacity: 0.35 !important;
+   color: #5b5b5b;
+	 opacity: 0.5 !important;
+	 font-style: italic;
 }
