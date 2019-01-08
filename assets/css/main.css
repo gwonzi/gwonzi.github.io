@@ -3234,6 +3234,22 @@ table.rtab, table.ptab {
 	background: #bbb;
 }
 
-::placeholder, ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder, :-moz-placeholder {
-	opacity: 0.35;
+::-webkit-input-placeholder {
+    color: #FF0000;
+    opacity: 0.35 !important; /* for older chrome versions. may no longer apply. */
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #FF0000;
+    opacity: 0.35 !important;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #FF0000;
+    opacity: 0.35 !important;
+}
+
+:-ms-input-placeholder {
+   color: #FF0000;
+	 opacity: 0.35 !important;
 }
