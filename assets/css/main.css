@@ -3291,7 +3291,7 @@ table.rtab, table.ptab {
 }
 
 .about-name {
-	display: inline-block;
+	display: block;
 	float: left;
 	font-size: 300%;
 }
