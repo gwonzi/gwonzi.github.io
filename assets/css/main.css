@@ -3292,6 +3292,7 @@ table.rtab, table.ptab {
 
 .namebar {
 	width: 100%;
+	display: block;
 	border-radius: 10px;
 	margin-bottom: 12px;
 	padding: 5px 0 5px 0;
