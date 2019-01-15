@@ -3287,10 +3287,13 @@ table.rtab, table.ptab {
 /* about page */
 
 .about-name {
+	display: inline-block;
 	float: left;
-	font-size: 200%;
+	font-size: 300%;
+	vertical-align: top;
 }
 
 .about-content {
+	display: inline;
 	vertical-align: top;
 }
