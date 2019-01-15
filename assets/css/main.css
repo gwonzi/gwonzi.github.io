@@ -3286,9 +3286,31 @@ table.rtab, table.ptab {
 
 /* about page */
 
-.about-name {
-	padding-left: 25px;
-	padding-right: 25px;
+.nameheader {
+	text-align: center;
+}
+
+.namebar {
 	border-radius: 5px;
 	margin-bottom: 5px;
+}
+
+.chris-name {
+	background-color: #7956a6;
+	color:#fff;
+}
+
+.corey-name {
+	background-color: #91c563;
+	color:#000;
+}
+
+.eduardo-name {
+	background-color: #4980c0;
+	color:#fff;
+}
+
+.ryan-name {
+	background-color: #f7cf56;
+	color:#000;
 }
