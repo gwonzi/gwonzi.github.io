@@ -3291,9 +3291,10 @@ table.rtab, table.ptab {
 }
 
 .namebar {
+	width: 90%;
 	border-radius: 10px;
-	margin-bottom: 7px;
-	padding: 5px 20% 5px 20%;
+	margin-bottom: 12px;
+	padding: 5px 0 5px 0;
 }
 
 .chris-name {
