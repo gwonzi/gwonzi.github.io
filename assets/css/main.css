@@ -3193,6 +3193,12 @@ input, select, textarea {
 	height: 100%;
 }
 
+/* circly image */
+
+img.circ {
+	border-radius: 50%;
+}
+
 /* Standings */
 ul.sbuttons {
 	list-style-type: none;
@@ -3234,6 +3240,7 @@ table.rtab, table.ptab {
 	background: #bbb;
 }
 
+/* faded placeholder text for forms */
 ::placeholder {
     color: #5b5b5b;
     opacity: 0.5 !important;
