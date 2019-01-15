@@ -3292,5 +3292,5 @@ table.rtab, table.ptab {
 }
 
 .about-content {
-/**/
+	vertical-align: top;
 }
