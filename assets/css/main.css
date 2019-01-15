@@ -3283,3 +3283,10 @@ table.rtab, table.ptab {
 	 opacity: 0.5 !important;
 	 font-style: italic;
 }
+
+/* about page */
+
+.about-name {
+	padding: 5px;
+	border-radius: 5px;
+}
