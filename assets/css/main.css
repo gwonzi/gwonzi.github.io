@@ -3283,19 +3283,3 @@ table.rtab, table.ptab {
 	 opacity: 0.5 !important;
 	 font-style: italic;
 }
-
-/* about page */
-
-.about-container {
-	vertical-align: top;
-}
-
-.about-name {
-	display: block;
-	float: left;
-	font-size: 300%;
-}
-
-.about-content {
-	display: inline;
-}
