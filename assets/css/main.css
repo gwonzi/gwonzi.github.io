@@ -3253,6 +3253,7 @@ table.rtab, table.ptab {
 }
 
 /* faded placeholder text for forms */
+
 ::placeholder {
     color: #5b5b5b;
     opacity: 0.5 !important;
@@ -3281,4 +3282,15 @@ table.rtab, table.ptab {
    color: #5b5b5b;
 	 opacity: 0.5 !important;
 	 font-style: italic;
+}
+
+/* about page */
+
+.about-name {
+	float: left;
+	font-size: 200%;
+}
+
+.about-content {
+/**/
 }
